@@ -1,0 +1,47 @@
+services:
+  mariadb-master:
+    image: mariadb:10.11
+    container_name: mariadb_master
+    restart: unless-stopped
+    ports:
+      - "3307:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root123
+      MYSQL_DATABASE: marketplace
+    volumes:
+      - ./master/my.cnf:/etc/mysql/conf.d/my.cnf
+      - master_data:/var/lib/mysql
+
+  mariadb-slave:
+    image: mariadb:10.11
+    container_name: mariadb_slave
+    restart: unless-stopped
+    ports:
+      - "3308:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root123
+    volumes:
+      - ./slave/my.cnf:/etc/mysql/conf.d/my.cnf
+      - slave_data:/var/lib/mysql
+    depends_on:
+      - mariadb-master
+
+  metabase:
+    image: metabase/metabase:v0.49.20
+    container_name: metabase
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      MB_DB_TYPE: mysql
+      MB_DB_DBNAME: metabase
+      MB_DB_PORT: 3306
+      MB_DB_USER: root
+      MB_DB_PASS: root123
+      MB_DB_HOST: mariadb-master
+    depends_on:
+      - mariadb-master
+
+volumes:
+  master_data:
+  slave_data:

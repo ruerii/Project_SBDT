@@ -1,0 +1,406 @@
+Warning: environ value jdk-11.0.23+9 for key :java-version has been overwritten with 11.0.23
+2026-07-17 03:05:24,968 INFO metabase.util :: Maximum memory available to JVM: 429.3 MB
+2026-07-17 03:05:32,527 INFO util.encryption :: Saved credentials encryption is DISABLED for this Metabase instance. 🔓 
+ For more information, see https://metabase.com/docs/latest/operations-guide/encrypting-database-details-at-rest.html
+2026-07-17 03:05:48,922 INFO driver.impl :: [34mRegistered abstract driver :sql[0m  🚚
+2026-07-17 03:05:48,959 INFO driver.impl :: [34mRegistered abstract driver :sql-jdbc[0m (parents: [:sql]) 🚚
+2026-07-17 03:05:48,986 INFO metabase.util :: [32mLoad driver :sql-jdbc took 241.0 ms[0m
+2026-07-17 03:05:48,988 INFO driver.impl :: [34mRegistered driver :h2[0m (parents: [:sql-jdbc]) 🚚
+2026-07-17 03:05:49,829 INFO driver.impl :: [34mRegistered driver :mysql[0m (parents: [:sql-jdbc]) 🚚
+2026-07-17 03:05:49,954 INFO driver.impl :: [34mRegistered driver :postgres[0m (parents: [:sql-jdbc]) 🚚
+2026-07-17 03:05:55,787 INFO metabase.core :: 
+Metabase v0.49.20 (af03591) 
+
+Copyright © 2026 Metabase, Inc. 
+
+Metabase Enterprise Edition extensions are NOT PRESENT.
+2026-07-17 03:05:55,835 INFO metabase.core :: Starting Metabase in STANDALONE mode
+2026-07-17 03:05:56,126 INFO metabase.server :: Launching Embedded Jetty Webserver with config:
+ {:port 3000, :host "0.0.0.0"}
+
+2026-07-17 03:05:56,350 INFO metabase.core :: Starting Metabase version v0.49.20 (af03591) ...
+2026-07-17 03:05:56,364 INFO metabase.core :: System info:
+ {"file.encoding" "UTF-8",
+ "java.runtime.name" "OpenJDK Runtime Environment",
+ "java.runtime.version" "11.0.23+9",
+ "java.vendor" "Eclipse Adoptium",
+ "java.vendor.url" "https://adoptium.net/",
+ "java.version" "11.0.23",
+ "java.vm.name" "OpenJDK 64-Bit Server VM",
+ "java.vm.version" "11.0.23+9",
+ "os.name" "Linux",
+ "os.version" "6.18.33.2-microsoft-standard-WSL2",
+ "user.language" "en",
+ "user.timezone" "GMT"}
+
+2026-07-17 03:05:56,378 INFO metabase.plugins :: Loading plugins in /plugins...
+2026-07-17 03:05:58,233 ERROR middleware.log :: [31mGET /api/health 503 985.4 ms (0 DB calls) 
+{:status "initializing", :progress 0.2}
+[0m
+2026-07-17 03:05:58,607 INFO util.files :: Extract file /modules/redshift.metabase-driver.jar -> /plugins/redshift.metabase-driver.jar
+2026-07-17 03:05:58,874 INFO util.files :: Extract file /modules/mongo.metabase-driver.jar -> /plugins/mongo.metabase-driver.jar
+2026-07-17 03:05:58,967 ERROR middleware.log :: [31mGET /api/health 503 440.8 µs (0 DB calls) 
+{:status "initializing", :progress 0.2}
+[0m
+2026-07-17 03:05:59,122 INFO util.files :: Extract file /modules/sqlite.metabase-driver.jar -> /plugins/sqlite.metabase-driver.jar
+2026-07-17 03:05:59,526 ERROR middleware.log :: [31mGET /api/health 503 454.0 µs (0 DB calls) 
+{:status "initializing", :progress 0.2}
+[0m
+2026-07-17 03:06:00,090 ERROR middleware.log :: [31mGET /api/health 503 614.3 µs (0 DB calls) 
+{:status "initializing", :progress 0.2}
+[0m
+2026-07-17 03:06:00,683 ERROR middleware.log :: [31mGET /api/health 503 536.2 µs (0 DB calls) 
+{:status "initializing", :progress 0.2}
+[0m
+2026-07-17 03:06:01,270 ERROR middleware.log :: [31mGET /api/health 503 403.6 µs (0 DB calls) 
+{:status "initializing", :progress 0.2}
+[0m
+2026-07-17 03:06:01,989 ERROR middleware.log :: [31mGET /api/health 503 530.9 µs (0 DB calls) 
+{:status "initializing", :progress 0.2}
+[0m
+2026-07-17 03:06:02,599 ERROR middleware.log :: [31mGET /api/health 503 689.1 µs (0 DB calls) 
+{:status "initializing", :progress 0.2}
+[0m
+2026-07-17 03:06:02,878 INFO util.files :: Extract file /modules/googleanalytics.metabase-driver.jar -> /plugins/googleanalytics.metabase-driver.jar
+2026-07-17 03:06:03,187 INFO util.files :: Extract file /modules/sqlserver.metabase-driver.jar -> /plugins/sqlserver.metabase-driver.jar
+2026-07-17 03:06:03,253 ERROR middleware.log :: [31mGET /api/health 503 7.8 ms (0 DB calls) 
+{:status "initializing", :progress 0.2}
+[0m
+2026-07-17 03:06:03,348 INFO util.files :: Extract file /modules/snowflake.metabase-driver.jar -> /plugins/snowflake.metabase-driver.jar
+2026-07-17 03:06:03,801 ERROR middleware.log :: [31mGET /api/health 503 429.5 µs (0 DB calls) 
+{:status "initializing", :progress 0.2}
+[0m
+2026-07-17 03:06:04,331 ERROR middleware.log :: [31mGET /api/health 503 396.8 µs (0 DB calls) 
+{:status "initializing", :progress 0.2}
+[0m
+2026-07-17 03:06:04,871 ERROR middleware.log :: [31mGET /api/health 503 381.6 µs (0 DB calls) 
+{:status "initializing", :progress 0.2}
+[0m
+2026-07-17 03:06:05,981 ERROR middleware.log :: [31mGET /api/health 503 13.0 ms (0 DB calls) 
+{:status "initializing", :progress 0.2}
+[0m
+2026-07-17 03:06:06,556 ERROR middleware.log :: [31mGET /api/health 503 605.4 µs (0 DB calls) 
+{:status "initializing", :progress 0.2}
+[0m
+2026-07-17 03:06:07,119 ERROR middleware.log :: [31mGET /api/health 503 1.2 ms (0 DB calls) 
+{:status "initializing", :progress 0.2}
+[0m
+2026-07-17 03:06:07,675 ERROR middleware.log :: [31mGET /api/health 503 1.5 ms (0 DB calls) 
+{:status "initializing", :progress 0.2}
+[0m
+2026-07-17 03:06:08,356 ERROR middleware.log :: [31mGET /api/health 503 2.9 ms (0 DB calls) 
+{:status "initializing", :progress 0.2}
+[0m
+2026-07-17 03:06:08,971 ERROR middleware.log :: [31mGET /api/health 503 673.1 µs (0 DB calls) 
+{:status "initializing", :progress 0.2}
+[0m
+2026-07-17 03:06:09,509 ERROR middleware.log :: [31mGET /api/health 503 561.8 µs (0 DB calls) 
+{:status "initializing", :progress 0.2}
+[0m
+2026-07-17 03:06:10,056 ERROR middleware.log :: [31mGET /api/health 503 1.0 ms (0 DB calls) 
+{:status "initializing", :progress 0.2}
+[0m
+2026-07-17 03:06:10,577 ERROR middleware.log :: [31mGET /api/health 503 299.7 µs (0 DB calls) 
+{:status "initializing", :progress 0.2}
+[0m
+2026-07-17 03:06:11,107 ERROR middleware.log :: [31mGET /api/health 503 449.0 µs (0 DB calls) 
+{:status "initializing", :progress 0.2}
+[0m
+2026-07-17 03:06:11,657 ERROR middleware.log :: [31mGET /api/health 503 676.3 µs (0 DB calls) 
+{:status "initializing", :progress 0.2}
+[0m
+2026-07-17 03:06:11,842 INFO util.files :: Extract file /modules/presto-jdbc.metabase-driver.jar -> /plugins/presto-jdbc.metabase-driver.jar
+2026-07-17 03:06:12,190 ERROR middleware.log :: [31mGET /api/health 503 493.8 µs (0 DB calls) 
+{:status "initializing", :progress 0.2}
+[0m
+2026-07-17 03:06:12,751 ERROR middleware.log :: [31mGET /api/health 503 748.8 µs (0 DB calls) 
+{:status "initializing", :progress 0.2}
+[0m
+2026-07-17 03:06:13,013 INFO util.files :: Extract file /modules/sparksql.metabase-driver.jar -> /plugins/sparksql.metabase-driver.jar
+2026-07-17 03:06:13,391 ERROR middleware.log :: [31mGET /api/health 503 427.3 µs (0 DB calls) 
+{:status "initializing", :progress 0.2}
+[0m
+2026-07-17 03:06:13,959 ERROR middleware.log :: [31mGET /api/health 503 510.8 µs (0 DB calls) 
+{:status "initializing", :progress 0.2}
+[0m
+2026-07-17 03:06:14,338 INFO util.files :: Extract file /modules/druid.metabase-driver.jar -> /plugins/druid.metabase-driver.jar
+2026-07-17 03:06:14,400 INFO util.files :: Extract file /modules/bigquery-cloud-sdk.metabase-driver.jar -> /plugins/bigquery-cloud-sdk.metabase-driver.jar
+2026-07-17 03:06:14,490 ERROR middleware.log :: [31mGET /api/health 503 454.2 µs (0 DB calls) 
+{:status "initializing", :progress 0.2}
+[0m
+2026-07-17 03:06:15,025 ERROR middleware.log :: [31mGET /api/health 503 467.6 µs (0 DB calls) 
+{:status "initializing", :progress 0.2}
+[0m
+2026-07-17 03:06:15,558 ERROR middleware.log :: [31mGET /api/health 503 1.0 ms (0 DB calls) 
+{:status "initializing", :progress 0.2}
+[0m
+2026-07-17 03:06:16,097 ERROR middleware.log :: [31mGET /api/health 503 1.1 ms (0 DB calls) 
+{:status "initializing", :progress 0.2}
+[0m
+2026-07-17 03:06:16,119 INFO util.files :: Extract file /modules/vertica.metabase-driver.jar -> /plugins/vertica.metabase-driver.jar
+2026-07-17 03:06:16,132 INFO util.files :: Extract file /modules/athena.metabase-driver.jar -> /plugins/athena.metabase-driver.jar
+2026-07-17 03:06:16,643 ERROR middleware.log :: [31mGET /api/health 503 514.0 µs (0 DB calls) 
+{:status "initializing", :progress 0.2}
+[0m
+2026-07-17 03:06:17,114 INFO util.files :: Extract file /modules/oracle.metabase-driver.jar -> /plugins/oracle.metabase-driver.jar
+2026-07-17 03:06:17,227 ERROR middleware.log :: [31mGET /api/health 503 2.3 ms (0 DB calls) 
+{:status "initializing", :progress 0.2}
+[0m
+2026-07-17 03:06:17,760 ERROR middleware.log :: [31mGET /api/health 503 2.2 ms (0 DB calls) 
+{:status "initializing", :progress 0.2}
+[0m
+2026-07-17 03:06:18,291 ERROR middleware.log :: [31mGET /api/health 503 641.7 µs (0 DB calls) 
+{:status "initializing", :progress 0.2}
+[0m
+2026-07-17 03:06:18,605 DEBUG plugins.lazy-loaded-driver :: [35mRegistering lazy loading driver :presto-jdbc...[0m
+2026-07-17 03:06:18,627 INFO driver.impl :: [34mRegistered driver :presto-jdbc[0m (parents: [:sql-jdbc]) 🚚
+2026-07-17 03:06:18,679 DEBUG plugins.lazy-loaded-driver :: [35mRegistering lazy loading driver :druid...[0m
+2026-07-17 03:06:18,680 INFO driver.impl :: [34mRegistered driver :druid[0m  🚚
+2026-07-17 03:06:18,713 DEBUG plugins.lazy-loaded-driver :: [35mRegistering lazy loading driver :googleanalytics...[0m
+2026-07-17 03:06:18,715 INFO driver.impl :: [34mRegistered driver :googleanalytics[0m  🚚
+2026-07-17 03:06:18,797 INFO plugins.dependencies :: [31mMetabase cannot initialize plugin Metabase Vertica Driver due to required dependencies.[0m Metabase requires the Vertica JDBC driver in order to connect to Vertica databases, but we can't ship it as part of Metabase due to licensing restrictions. See https://metabase.com/docs/latest/administration-guide/databases/vertica.html for more details.
+
+2026-07-17 03:06:18,812 INFO plugins.dependencies :: Metabase Vertica Driver dependency {:class com.vertica.jdbc.Driver} satisfied? false
+2026-07-17 03:06:18,823 INFO plugins.dependencies :: [33mPlugins with unsatisfied deps: ["Metabase Vertica Driver"][0m
+2026-07-17 03:06:18,859 ERROR middleware.log :: [31mGET /api/health 503 730.0 µs (0 DB calls) 
+{:status "initializing", :progress 0.2}
+[0m
+2026-07-17 03:06:19,206 DEBUG plugins.lazy-loaded-driver :: [35mRegistering lazy loading driver :bigquery-cloud-sdk...[0m
+2026-07-17 03:06:19,212 INFO driver.impl :: [34mRegistered driver :bigquery-cloud-sdk[0m (parents: [:sql]) 🚚
+2026-07-17 03:06:19,344 DEBUG plugins.lazy-loaded-driver :: [35mRegistering lazy loading driver :mongo...[0m
+2026-07-17 03:06:22,911 ERROR middleware.log :: [31mGET /api/health 503 556.7 µs (0 DB calls) 
+{:status "initializing", :progress 0.2}
+[0m
+2026-07-17 03:06:22,942 INFO driver.impl :: [34mRegistered driver :mongo[0m  🚚
+2026-07-17 03:06:22,958 DEBUG plugins.lazy-loaded-driver :: [35mRegistering lazy loading driver :sqlite...[0m
+2026-07-17 03:06:22,967 INFO driver.impl :: [34mRegistered driver :sqlite[0m (parents: [:sql-jdbc]) 🚚
+2026-07-17 03:06:23,017 INFO plugins.dependencies :: [31mMetabase cannot initialize plugin Metabase Oracle Driver due to required dependencies.[0m Metabase requires the Oracle JDBC driver in order to connect to Oracle databases, but we can't ship it as part of Metabase due to licensing restrictions. See https://metabase.com/docs/latest/administration-guide/databases/oracle.html for more details.
+
+2026-07-17 03:06:23,018 INFO plugins.dependencies :: Metabase Oracle Driver dependency {:class oracle.jdbc.OracleDriver} satisfied? false
+2026-07-17 03:06:23,030 INFO plugins.dependencies :: [33mPlugins with unsatisfied deps: ["Metabase Oracle Driver" "Metabase Vertica Driver"][0m
+2026-07-17 03:06:23,063 DEBUG plugins.lazy-loaded-driver :: [35mRegistering lazy loading driver :hive-like...[0m
+2026-07-17 03:06:23,066 INFO driver.impl :: [34mRegistered abstract driver :hive-like[0m (parents: [:sql-jdbc]) 🚚
+2026-07-17 03:06:23,067 DEBUG plugins.lazy-loaded-driver :: [35mRegistering lazy loading driver :sparksql...[0m
+2026-07-17 03:06:23,068 INFO driver.impl :: [34mRegistered driver :sparksql[0m (parents: [:hive-like]) 🚚
+2026-07-17 03:06:23,105 DEBUG plugins.lazy-loaded-driver :: [35mRegistering lazy loading driver :redshift...[0m
+2026-07-17 03:06:23,108 INFO driver.impl :: [34mRegistered driver :redshift[0m (parents: [:postgres]) 🚚
+2026-07-17 03:06:23,127 DEBUG plugins.lazy-loaded-driver :: [35mRegistering lazy loading driver :sqlserver...[0m
+2026-07-17 03:06:23,128 INFO driver.impl :: [34mRegistered driver :sqlserver[0m (parents: [:sql-jdbc]) 🚚
+2026-07-17 03:06:23,180 DEBUG plugins.lazy-loaded-driver :: [35mRegistering lazy loading driver :athena...[0m
+2026-07-17 03:06:23,181 INFO driver.impl :: [34mRegistered driver :athena[0m (parents: [:sql-jdbc]) 🚚
+2026-07-17 03:06:23,365 DEBUG plugins.lazy-loaded-driver :: [35mRegistering lazy loading driver :snowflake...[0m
+2026-07-17 03:06:23,367 INFO driver.impl :: [34mRegistered driver :snowflake[0m (parents: [:sql-jdbc]) 🚚
+2026-07-17 03:06:23,429 INFO metabase.core :: Setting up and migrating Metabase DB. Please sit tight, this may take a minute...
+2026-07-17 03:06:23,466 INFO db.setup :: [36mVerifying mysql Database Connection ...[0m
+2026-07-17 03:06:23,494 ERROR middleware.log :: [31mGET /api/health 503 1.1 ms (0 DB calls) 
+{:status "initializing", :progress 0.3}
+[0m
+2026-07-17 03:06:24,008 ERROR middleware.log :: [31mGET /api/health 503 539.8 µs (0 DB calls) 
+{:status "initializing", :progress 0.3}
+[0m
+2026-07-17 03:06:24,632 ERROR middleware.log :: [31mGET /api/health 503 2.7 ms (0 DB calls) 
+{:status "initializing", :progress 0.3}
+[0m
+2026-07-17 03:06:25,178 ERROR middleware.log :: [31mGET /api/health 503 350.6 µs (0 DB calls) 
+{:status "initializing", :progress 0.3}
+[0m
+2026-07-17 03:06:25,715 ERROR middleware.log :: [31mGET /api/health 503 369.5 µs (0 DB calls) 
+{:status "initializing", :progress 0.3}
+[0m
+2026-07-17 03:06:26,231 INFO db.setup :: Successfully verified MariaDB 10.11.16-MariaDB-ubu2204-log application database connection. ✅
+2026-07-17 03:06:26,233 INFO db.setup :: [36mChecking if a database downgrade is required...[0m
+2026-07-17 03:06:26,274 ERROR middleware.log :: [31mGET /api/health 503 5.7 ms (0 DB calls) 
+{:status "initializing", :progress 0.3}
+[0m
+2026-07-17 03:06:26,814 ERROR middleware.log :: [31mGET /api/health 503 507.8 µs (0 DB calls) 
+{:status "initializing", :progress 0.3}
+[0m
+2026-07-17 03:06:27,362 ERROR middleware.log :: [31mGET /api/health 503 1.1 ms (0 DB calls) 
+{:status "initializing", :progress 0.3}
+[0m
+2026-07-17 03:06:27,933 ERROR middleware.log :: [31mGET /api/health 503 409.3 µs (0 DB calls) 
+{:status "initializing", :progress 0.3}
+[0m
+2026-07-17 03:06:28,507 ERROR middleware.log :: [31mGET /api/health 503 505.9 µs (0 DB calls) 
+{:status "initializing", :progress 0.3}
+[0m
+2026-07-17 03:06:29,047 ERROR middleware.log :: [31mGET /api/health 503 439.0 µs (0 DB calls) 
+{:status "initializing", :progress 0.3}
+[0m
+2026-07-17 03:06:29,592 ERROR middleware.log :: [31mGET /api/health 503 435.9 µs (0 DB calls) 
+{:status "initializing", :progress 0.3}
+[0m
+2026-07-17 03:06:31,532 ERROR middleware.log :: [31mGET /api/health 503 639.7 µs (0 DB calls) 
+{:status "initializing", :progress 0.3}
+[0m
+2026-07-17 03:06:32,084 ERROR middleware.log :: [31mGET /api/health 503 684.3 µs (0 DB calls) 
+{:status "initializing", :progress 0.3}
+[0m
+2026-07-17 03:06:32,684 ERROR middleware.log :: [31mGET /api/health 503 1.4 ms (0 DB calls) 
+{:status "initializing", :progress 0.3}
+[0m
+2026-07-17 03:06:33,248 ERROR middleware.log :: [31mGET /api/health 503 3.1 ms (0 DB calls) 
+{:status "initializing", :progress 0.3}
+[0m
+2026-07-17 03:06:33,786 ERROR middleware.log :: [31mGET /api/health 503 2.2 ms (0 DB calls) 
+{:status "initializing", :progress 0.3}
+[0m
+2026-07-17 03:06:33,832 INFO db.setup :: Running Database Migrations...
+2026-07-17 03:06:33,838 INFO db.setup :: Setting up Liquibase...
+2026-07-17 03:06:34,338 ERROR middleware.log :: [31mGET /api/health 503 548.9 µs (0 DB calls) 
+{:status "initializing", :progress 0.3}
+[0m
+2026-07-17 03:06:34,632 INFO db.setup :: Liquibase is ready.
+2026-07-17 03:06:34,643 INFO db.liquibase :: Checking if Database has unrun migrations...
+2026-07-17 03:06:34,927 ERROR middleware.log :: [31mGET /api/health 503 571.4 µs (0 DB calls) 
+{:status "initializing", :progress 0.3}
+[0m
+2026-07-17 03:06:35,498 ERROR middleware.log :: [31mGET /api/health 503 951.6 µs (0 DB calls) 
+{:status "initializing", :progress 0.3}
+[0m
+2026-07-17 03:06:36,050 ERROR middleware.log :: [31mGET /api/health 503 263.2 µs (0 DB calls) 
+{:status "initializing", :progress 0.3}
+[0m
+2026-07-17 03:06:36,648 ERROR middleware.log :: [31mGET /api/health 503 571.2 µs (0 DB calls) 
+{:status "initializing", :progress 0.3}
+[0m
+2026-07-17 03:06:37,275 ERROR middleware.log :: [31mGET /api/health 503 232.6 µs (0 DB calls) 
+{:status "initializing", :progress 0.3}
+[0m
+2026-07-17 03:06:37,845 ERROR middleware.log :: [31mGET /api/health 503 795.5 µs (0 DB calls) 
+{:status "initializing", :progress 0.3}
+[0m
+2026-07-17 03:06:37,983 INFO db.liquibase :: Database has unrun migrations. Checking if migraton lock is taken...
+2026-07-17 03:06:38,364 ERROR middleware.log :: [31mGET /api/health 503 388.0 µs (0 DB calls) 
+{:status "initializing", :progress 0.3}
+[0m
+2026-07-17 03:06:38,881 ERROR middleware.log :: [31mGET /api/health 503 422.7 µs (0 DB calls) 
+{:status "initializing", :progress 0.3}
+[0m
+2026-07-17 03:06:39,414 ERROR middleware.log :: [31mGET /api/health 503 380.0 µs (0 DB calls) 
+{:status "initializing", :progress 0.3}
+[0m
+2026-07-17 03:06:39,932 ERROR middleware.log :: [31mGET /api/health 503 236.6 µs (0 DB calls) 
+{:status "initializing", :progress 0.3}
+[0m
+2026-07-17 03:06:40,031 WARN util.jvm :: [31mauto-retry metabase.db.liquibase$wait_for_migration_lock_to_be_cleared$fn__49170@15e6caef: Database has migration lock; cannot run migrations. You can force-release these locks by running `java -jar metabase.jar migrate release-locks`.[0m
+2026-07-17 03:06:40,467 ERROR middleware.log :: [31mGET /api/health 503 304.3 µs (0 DB calls) 
+{:status "initializing", :progress 0.3}
+[0m
+2026-07-17 03:06:40,984 ERROR middleware.log :: [31mGET /api/health 503 271.6 µs (0 DB calls) 
+{:status "initializing", :progress 0.3}
+[0m
+2026-07-17 03:06:41,505 ERROR middleware.log :: [31mGET /api/health 503 556.4 µs (0 DB calls) 
+{:status "initializing", :progress 0.3}
+[0m
+2026-07-17 03:06:42,042 ERROR middleware.log :: [31mGET /api/health 503 311.9 µs (0 DB calls) 
+{:status "initializing", :progress 0.3}
+[0m
+2026-07-17 03:06:42,050 WARN util.jvm :: [31mauto-retry metabase.db.liquibase$wait_for_migration_lock_to_be_cleared$fn__49170@15e6caef: Database has migration lock; cannot run migrations. You can force-release these locks by running `java -jar metabase.jar migrate release-locks`.[0m
+2026-07-17 03:06:42,576 ERROR middleware.log :: [31mGET /api/health 503 486.2 µs (0 DB calls) 
+{:status "initializing", :progress 0.3}
+[0m
+2026-07-17 03:06:43,105 ERROR middleware.log :: [31mGET /api/health 503 316.4 µs (0 DB calls) 
+{:status "initializing", :progress 0.3}
+[0m
+2026-07-17 03:06:43,643 ERROR middleware.log :: [31mGET /api/health 503 565.4 µs (0 DB calls) 
+{:status "initializing", :progress 0.3}
+[0m
+2026-07-17 03:06:44,076 WARN util.jvm :: [31mauto-retry metabase.db.liquibase$wait_for_migration_lock_to_be_cleared$fn__49170@15e6caef: Database has migration lock; cannot run migrations. You can force-release these locks by running `java -jar metabase.jar migrate release-locks`.[0m
+2026-07-17 03:06:44,199 ERROR middleware.log :: [31mGET /api/health 503 404.6 µs (0 DB calls) 
+{:status "initializing", :progress 0.3}
+[0m
+2026-07-17 03:06:44,752 ERROR middleware.log :: [31mGET /api/health 503 3.7 ms (0 DB calls) 
+{:status "initializing", :progress 0.3}
+[0m
+2026-07-17 03:06:45,288 ERROR middleware.log :: [31mGET /api/health 503 457.6 µs (0 DB calls) 
+{:status "initializing", :progress 0.3}
+[0m
+2026-07-17 03:06:45,849 ERROR middleware.log :: [31mGET /api/health 503 713.0 µs (0 DB calls) 
+{:status "initializing", :progress 0.3}
+[0m
+2026-07-17 03:06:46,095 WARN util.jvm :: [31mauto-retry metabase.db.liquibase$wait_for_migration_lock_to_be_cleared$fn__49170@15e6caef: Database has migration lock; cannot run migrations. You can force-release these locks by running `java -jar metabase.jar migrate release-locks`.[0m
+2026-07-17 03:06:46,761 ERROR middleware.log :: [31mGET /api/health 503 392.8 µs (0 DB calls) 
+{:status "initializing", :progress 0.3}
+[0m
+2026-07-17 03:06:48,134 WARN util.jvm :: [31mauto-retry metabase.db.liquibase$wait_for_migration_lock_to_be_cleared$fn__49170@15e6caef: Database has migration lock; cannot run migrations. You can force-release these locks by running `java -jar metabase.jar migrate release-locks`.[0m
+2026-07-17 03:06:48,146 ERROR middleware.log :: [31mGET /api/health 503 15.9 ms (0 DB calls) 
+{:status "initializing", :progress 0.3}
+[0m
+2026-07-17 03:06:48,720 ERROR middleware.log :: [31mGET /api/health 503 500.1 µs (0 DB calls) 
+{:status "initializing", :progress 0.3}
+[0m
+2026-07-17 03:06:49,269 ERROR middleware.log :: [31mGET /api/health 503 1.4 ms (0 DB calls) 
+{:status "initializing", :progress 0.3}
+[0m
+2026-07-17 03:06:49,874 ERROR middleware.log :: [31mGET /api/health 503 443.6 µs (0 DB calls) 
+{:status "initializing", :progress 0.3}
+[0m
+2026-07-17 03:06:50,187 ERROR metabase.core :: Metabase Initialization FAILED
+liquibase.exception.LockException: Database has migration lock; cannot run migrations. You can force-release these locks by running `java -jar metabase.jar migrate release-locks`.
+	at metabase.db.liquibase$wait_for_migration_lock_to_be_cleared$fn__49170.invoke(liquibase.clj:218)
+	at metabase.util.jvm$do_with_auto_retries.invokeStatic(jvm.clj:176)
+	at metabase.util.jvm$do_with_auto_retries.invoke(jvm.clj:165)
+	at metabase.util.jvm$do_with_auto_retries.invokeStatic(jvm.clj:183)
+	at metabase.util.jvm$do_with_auto_retries.invoke(jvm.clj:165)
+	at metabase.util.jvm$do_with_auto_retries.invokeStatic(jvm.clj:183)
+	at metabase.util.jvm$do_with_auto_retries.invoke(jvm.clj:165)
+	at metabase.util.jvm$do_with_auto_retries.invokeStatic(jvm.clj:183)
+	at metabase.util.jvm$do_with_auto_retries.invoke(jvm.clj:165)
+	at metabase.util.jvm$do_with_auto_retries.invokeStatic(jvm.clj:183)
+	at metabase.util.jvm$do_with_auto_retries.invoke(jvm.clj:165)
+	at metabase.util.jvm$do_with_auto_retries.invokeStatic(jvm.clj:183)
+	at metabase.util.jvm$do_with_auto_retries.invoke(jvm.clj:165)
+	at metabase.db.liquibase$wait_for_migration_lock_to_be_cleared.invokeStatic(liquibase.clj:212)
+	at metabase.db.liquibase$wait_for_migration_lock_to_be_cleared.invoke(liquibase.clj:207)
+	at metabase.db.liquibase$migrate_up_if_needed_BANG_.invokeStatic(liquibase.clj:294)
+	at metabase.db.liquibase$migrate_up_if_needed_BANG_.invoke(liquibase.clj:287)
+	at metabase.db.setup$migrate_BANG_$fn__51471.invoke(setup.clj:80)
+	at metabase.db.liquibase$do_with_liquibase$f_STAR___49147.invoke(liquibase.clj:139)
+	at metabase.db.liquibase$do_with_liquibase.invokeStatic(liquibase.clj:142)
+	at metabase.db.liquibase$do_with_liquibase.invoke(liquibase.clj:130)
+	at metabase.db.setup$migrate_BANG_.invokeStatic(setup.clj:75)
+	at metabase.db.setup$migrate_BANG_.doInvoke(setup.clj:56)
+	at clojure.lang.RestFn.invoke(RestFn.java:445)
+	at metabase.db.setup$run_schema_migrations_BANG_.invokeStatic(setup.clj:147)
+	at metabase.db.setup$run_schema_migrations_BANG_.invoke(setup.clj:141)
+	at metabase.db.setup$setup_db_BANG_$fn__51499$fn__51500.invoke(setup.clj:165)
+	at metabase.util.jvm$do_with_us_locale.invokeStatic(jvm.clj:239)
+	at metabase.util.jvm$do_with_us_locale.invoke(jvm.clj:225)
+	at metabase.db.setup$setup_db_BANG_$fn__51499.invoke(setup.clj:160)
+	at metabase.db.setup$setup_db_BANG_.invokeStatic(setup.clj:159)
+	at metabase.db.setup$setup_db_BANG_.invoke(setup.clj:153)
+	at metabase.db$setup_db_BANG_$fn__51519.invoke(db.clj:69)
+	at metabase.db$setup_db_BANG_.invokeStatic(db.clj:64)
+	at metabase.db$setup_db_BANG_.invoke(db.clj:55)
+	at metabase.core$init_BANG__STAR_.invokeStatic(core.clj:116)
+	at metabase.core$init_BANG__STAR_.invoke(core.clj:101)
+	at metabase.core$init_BANG_.invokeStatic(core.clj:159)
+	at metabase.core$init_BANG_.invoke(core.clj:154)
+	at metabase.core$start_normally.invokeStatic(core.clj:171)
+	at metabase.core$start_normally.invoke(core.clj:165)
+	at metabase.core$entrypoint.invokeStatic(core.clj:204)
+	at metabase.core$entrypoint.doInvoke(core.clj:198)
+	at clojure.lang.RestFn.invoke(RestFn.java:397)
+	at clojure.lang.AFn.applyToHelper(AFn.java:152)
+	at clojure.lang.RestFn.applyTo(RestFn.java:132)
+	at clojure.lang.Var.applyTo(Var.java:705)
+	at clojure.core$apply.invokeStatic(core.clj:667)
+	at clojure.core$apply.invoke(core.clj:662)
+	at metabase.bootstrap$_main.invokeStatic(bootstrap.clj:31)
+	at metabase.bootstrap$_main.doInvoke(bootstrap.clj:28)
+	at clojure.lang.RestFn.invoke(RestFn.java:397)
+	at clojure.lang.AFn.applyToHelper(AFn.java:152)
+	at clojure.lang.RestFn.applyTo(RestFn.java:132)
+	at metabase.bootstrap.main(Unknown Source)
+2026-07-17 03:06:50,327 INFO metabase.core :: Metabase Shutting Down ...
+2026-07-17 03:06:50,358 INFO metabase.server :: Shutting Down Embedded Jetty Webserver
+2026-07-17 03:06:50,414 ERROR middleware.log :: [31mGET /api/health 503 748.7 µs (0 DB calls) 
+{:status "initializing", :progress 0.3}
+[0m
+2026-07-17 03:06:50,639 WARN db.liquibase :: ()
+2026-07-17 03:06:50,674 INFO metabase.core :: Metabase Shutdown COMPLETE
+Warning: environ value jdk-11.0.23+9 for key :java-version has been overwritten with 11.0.23
+2026-07-17 03:07:40,126 INFO metabase.util :: Maximum memory available to JVM: 429.3 MB
+2026-07-17 03:07:47,460 INFO util.encryption :: Saved credentials encryption is DISABLED for this Metabase instance. 🔓 
+ For more information, see https://metabase.com/docs/latest/operations-guide/encrypting-database-details-at-rest.html
